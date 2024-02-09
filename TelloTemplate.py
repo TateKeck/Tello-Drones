@@ -60,8 +60,19 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        sendmsg('up 110', sleep=10)
-        sendmsg('forward 150')
+        # Square - Pilot = Tate keck - co pilot Blake Krugger
+        for i in range(4):
+            sendmsg('forward 80')
+            sendmsg('ccw 90')
+
+
+
+        # Triangle - Pilot = Blake Krugger - co pilot = Tate Keck
+
+
+
+        # circle -  Pilot = Tate keck - co pilot Blake Krugger
+
 
 
         sendmsg('land')
@@ -70,6 +81,7 @@ try:
 
     else:
         print('\nMake sure you check WIFI, surroundings, co-pilot is ready, re-run program\n')
+
 except KeyboardInterrupt:
     sendmsg('emergency')
 
